@@ -409,20 +409,20 @@ service secclkd /system/bin/secclkd
 
 # Battery Daemon
 service battd /system/bin/battd
-    class core
+    class main
     socket battdsock stream 0660 system system
     user root
     group system system
     oneshot
 
 service usbd /system/bin/usbd
-    class core
+    class main
     group system
 
 service touch /system/bin/logwrapper /system/bin/touchpad -a
     user system
     group system
-    class core
+    class main
     oneshot
 
 service whisperd /system/bin/whisperd /dev/ttyHS0
