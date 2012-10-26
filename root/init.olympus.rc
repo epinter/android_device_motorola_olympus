@@ -409,7 +409,7 @@ service secclkd /system/bin/secclkd
 
 # Battery Daemon
 service battd /system/bin/battd
-    class main
+    class core
     socket battdsock stream 0660 system system
     user root
     group system system
