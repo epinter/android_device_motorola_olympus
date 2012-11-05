@@ -21,4 +21,7 @@
 
     <!-- Show dock settings when docked -->
     <bool name="has_dock_settings">true</bool>
+
+    <!-- Show Expanded Desktop preference -->
+    <bool name="config_show_expandedDesktop">true</bool>
 </resources>
