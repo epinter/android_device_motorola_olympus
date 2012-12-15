@@ -84,8 +84,7 @@ PRODUCT_PACKAGES += rilwrap \
 			Usb \
 			com.android.future.usb.accessory \
 			OlympusParts \
-			HwaSettings \
-			hwcomposer.default
+			HwaSettings
 
 DEVICE_PACKAGE_OVERLAYS += device/motorola/olympus/overlay
 
