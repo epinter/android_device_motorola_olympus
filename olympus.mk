@@ -128,6 +128,12 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/handheld_core_hardware.xml:system/etc/permissions/handheld_core_hardware.xml
 
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
+#debug
+PRODUCT_PROPERTY_OVERRIDES +=persist.sys.root_access=3 \
+		ro.debuggable=1 \
+		ro.secure=0 \
+		ro.allow.mock.location=1 \
+		persist.service.adb.enable=1
 
 PRODUCT_NAME := generic_olympus
 PRODUCT_DEVICE := olympus
