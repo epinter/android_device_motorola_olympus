@@ -1,3 +1,4 @@
+/dev/rfkill               0666   wifi       wifi
 /dev/null                 0666   root       root
 /dev/zero                 0666   root       root
 /dev/full                 0666   root       root
