@@ -36,9 +36,6 @@ on fs
     exec /system/bin/logwrapper /system/bin/pds_perm_fix.sh
 
 on post-fs
-    # once everything is setup, no need to modify /
-    mount rootfs rootfs / ro remount
-
     # We chown/chmod /data again so because mount is run as root + defaults
     chown system system /data
     chmod 0771 /data
