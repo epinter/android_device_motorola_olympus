@@ -123,6 +123,8 @@ WIFI_DRIVER_SOCKET_IFACE    := eth0
 # Bluetooth
 BOARD_HAVE_BLUETOOTH := true
 BOARD_HAVE_BLUETOOTH_BCM := true
+BOARD_BLUEDROID_VENDOR_CONF := device/motorola/olympus/bluetooth/vnd_olympus.txt
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/motorola/olympus/bluetooth
 
 #EGL
 BOARD_EGL_CFG := device/motorola/olympus/config/egl.cfg

@@ -448,11 +448,10 @@ service map /system/bin/sdptool add --channel=20 MAP
     disabled
     oneshot
 
-service hciattach /system/bin/bt_init_wrapper.sh
-    user bluetooth
-    group bluetooth net_bt_admin
-    disabled
-    oneshot
+service hciattach /system/bin/logwrapper /system/bin/bt_init_wrapper.sh
+    class late_start
+    user root
+    group system bluetooth net_bt_admin misc
 
 #execute tcmdhelp
 on property:tcmd.start_tcmdhelp=1
