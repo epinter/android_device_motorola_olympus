@@ -125,6 +125,7 @@ BOARD_HAVE_BLUETOOTH := true
 BOARD_HAVE_BLUETOOTH_BCM := true
 BOARD_BLUEDROID_VENDOR_CONF := device/motorola/olympus/bluetooth/vnd_olympus.txt
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/motorola/olympus/bluetooth
+BOARD_BLUETOOTH_LIBBT_VNDCFG := device/motorola/olympus/bluetooth/bt_vendor.conf
 
 #EGL
 BOARD_EGL_CFG := device/motorola/olympus/config/egl.cfg

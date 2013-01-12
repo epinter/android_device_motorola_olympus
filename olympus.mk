@@ -67,7 +67,8 @@ PRODUCT_PACKAGES += make_ext4fs \
 #bluetooth
 PRODUCT_PACKAGES += l2ping \
 			hciconfig \
-			hcitool
+			hcitool \
+			libnetcmdiface
 
 #Audio
 PRODUCT_PACKAGES += DockAudio \
@@ -93,7 +94,8 @@ PRODUCT_COPY_FILES += \
     device/motorola/olympus/config/vold.fstab:system/etc/vold.fstab \
     device/motorola/olympus/scripts/postrecoveryboot.sh:recovery/root/sbin/postrecoveryboot.sh \
     device/motorola/olympus/config/media_codecs.xml:system/etc/media_codecs.xml \
-    device/motorola/olympus/config/media_profiles.xml:system/etc/media_profiles.xml
+    device/motorola/olympus/config/media_profiles.xml:system/etc/media_profiles.xml \
+    device/motorola/olympus/bluetooth/bt_vendor.conf:system/etc/bt_vendor.conf
 
 #keyboard files
 PRODUCT_COPY_FILES += \
