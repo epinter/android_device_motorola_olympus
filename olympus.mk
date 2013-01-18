@@ -95,7 +95,7 @@ PRODUCT_COPY_FILES += \
     device/motorola/olympus/scripts/postrecoveryboot.sh:recovery/root/sbin/postrecoveryboot.sh \
     device/motorola/olympus/config/media_codecs.xml:system/etc/media_codecs.xml \
     device/motorola/olympus/config/media_profiles.xml:system/etc/media_profiles.xml \
-    device/motorola/olympus/bluetooth/bt_vendor.conf:system/etc/bt_vendor.conf
+    device/motorola/olympus/bluetooth/bt_vendor.conf:system/etc/bluetooth/bt_vendor.conf
 
 #keyboard files
 PRODUCT_COPY_FILES += \
