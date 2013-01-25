@@ -448,11 +448,6 @@ service map /system/bin/sdptool add --channel=20 MAP
     disabled
     oneshot
 
-service hciattach /system/bin/logwrapper /system/bin/bt_init_wrapper.sh
-    class late_start
-    user root
-    group system bluetooth net_bt_admin misc
-
 #execute tcmdhelp
 on property:tcmd.start_tcmdhelp=1
     start tcmdhelp
@@ -504,7 +499,3 @@ on property:sys.chargeonly.mode=1
 
 on property:persist.service.adb.enable=1
     start adbd
-
-on property:init.svc.hciattach=stopping
-    exec /system/bin/bt_init -stop
-
